@@ -12,12 +12,13 @@ function Logo() {
         ratio={16 / 9}
         className="flex items-center justify-center"
         >
-        <Image
+        {/* <Image
           priority
           src={LogoImage}
           alt="all chat"
           className="dark:filter dark:invert"
-        />
+        /> */}
+        Chat With Anyone
 
         </AspectRatio>
       </div>

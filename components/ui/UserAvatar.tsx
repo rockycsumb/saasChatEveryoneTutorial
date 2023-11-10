@@ -7,21 +7,21 @@ export default function UseAvatar({
   image,
   className,
 }: {
-  name: string;
-  image: string;
+  name?: string | null;
+  image?: string | null;
   className?: string;
 }) {
   return (
     <Avatar className={cn("bg-white text-black", className)}>
-      {/* {image && (
+      {image && (
         <Image
           src={image}
-          alt={name}
+          alt={name || 'User name'}
           width={40}
           height={40}
           className="rounded-full"
         />
-      )} */}
+      )}
       <AvatarFallback
         delayMs={1000}
         className="dark:bg-white dark:text-black text-lg"
